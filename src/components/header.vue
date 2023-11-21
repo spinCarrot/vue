@@ -14,7 +14,7 @@ export default{
 <template>
 <div class="headerShow">
     <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/"></RouterLink>
+    <RouterLink to="../views/kankou.vue">kankou</RouterLink>
 
     
 </div>

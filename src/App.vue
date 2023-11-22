@@ -17,7 +17,7 @@ import Hader from "./components/header.vue";
 .header{
     width: 100vw;
     height: 20vh;
-    background-color: #daa0a0;
+    background-color: rgb(195, 230, 254);
 }
 
 .content{

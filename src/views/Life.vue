@@ -1,4 +1,6 @@
 <script>
+import{ mapState, mapAction, defineStore} from 'pinia'
+import counter from '../stores/counter'
 </script>
 
 <template>

@@ -14,7 +14,7 @@ export default defineStore("count", {
         }
     },
     actions: {
-        getadds() {
+        getadds(x) {
             fetch("https://api.kcg.gov.tw/api/service/Get/82c544fa-ec50-4dea-8e8c-d8041abe8dee")
                 .then(res => res.json())
                 .then(data => {
@@ -24,6 +24,7 @@ export default defineStore("count", {
                         this.name.push(item.古蹟名稱)
                     }),
                     console.log(this.name);
+                    console.log(x)
                 })
         }
     }

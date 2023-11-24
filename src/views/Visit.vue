@@ -12,10 +12,21 @@ export default {
 
     },
     methods: {
-        ...mapActions(vis, ["getadds"])
-    }
-    // mounted:{
-
+        ...mapActions(vis, ["getadds"]),
+        test(){
+            const cc = document.getElementById("ccc")
+            // console.dir(cc)
+            console.log(cc.value)
+            const btns = document.querySelectorAll("button[type='button']")
+            btns.forEach(item =>{
+                item.addEventListener('click', ()=>{
+                    this.getadds(item.value)
+                })
+            })
+        }
+    },
+    mounted(){
+        this.test()
     // console.dir( cls1);
 
     //             cls1.forEach(item=>{
@@ -25,6 +36,7 @@ export default {
     //                 })
     // })
 
+}
 }
 
 
@@ -46,8 +58,8 @@ export default {
 <div class="clock">
     <h2>{{ this.name }}</h2>
 </div>
-    <button type="button" @click="getadds()" class="btn1" value="鳳山區">鳳山區</button>
-    <button type="button" @click="" class="btn2" value="小港區">小港區</button>
+    <button type="button"  class="btn1" value="鳳山區">鳳山區</button>
+    <button type="button" @click="" class="btn2" value="小港區" id="ccc" >小港區</button>
     <button type="button" @click="" class="btn3" value="前鎮區">前鎮區</button>
     <button type="button" @click="" class="btn4" value="旗津區">旗津區</button>
     <button type="button" @click="" class="btn5" value="苓雅區">苓雅區</button>
@@ -105,7 +117,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 880px;
+    top: 870px;
     left: 810px;
 
     &:hover {
@@ -122,7 +134,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 1050px;
+    top: 1040px;
     left: 850px;
 
     &:hover {
@@ -138,7 +150,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 1070px;
+    top: 1060px;
     left: 570px;
 
     &:hover {
@@ -154,7 +166,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 970px;
+    top: 960px;
     left: 450px;
 
     &:hover {
@@ -170,7 +182,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 790px;
+    top: 780px;
     left: 760px;
 
     &:hover {
@@ -186,7 +198,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 770px;
+    top: 760px;
     left: 720px;
 
     &:hover {
@@ -202,7 +214,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 930px;
+    top: 920px;
     left: 420px;
 
     &:hover {
@@ -218,7 +230,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 870px;
+    top: 860px;
     left: 420px;
 
     &:hover {
@@ -234,7 +246,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 305px;
+    top: 295px;
     left: 1160px;
 
     &:hover {
@@ -250,7 +262,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 810px;
+    top: 800px;
     left: 370px;
 
     &:hover {
@@ -266,7 +278,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 740px;
+    top: 730px;
     left: 390px;
 
     &:hover {
@@ -282,7 +294,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 710px;
+    top: 700px;
     left: 720px;
 
     &:hover {
@@ -298,7 +310,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 930px;
+    top: 920px;
     left: 1140px;
 
     &:hover {
@@ -314,7 +326,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 805px;
+    top: 795px;
     left: 1300px;
 
     &:hover {
@@ -330,7 +342,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 750px;
+    top: 740px;
     left: 1450px;
 
     &:hover {
@@ -346,7 +358,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 415px;
+    top: 405px;
     left: 1510px;
 
     &:hover {
@@ -362,7 +374,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 750px;
+    top: 740px;
     left: 700px;
 
     &:hover {
@@ -378,7 +390,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 440px;
+    top: 430px;
     left: 1095px;
 
     &:hover {
@@ -394,7 +406,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 530px;
+    top: 520px;
     left: 1070px;
 
     &:hover {
@@ -410,7 +422,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 830px;
+    top: 820px;
     left: 1200px;
 
     &:hover {
@@ -426,7 +438,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 560px;
+    top: 550px;
     left: 1030px;
 
     &:hover {
@@ -442,7 +454,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 570px;
+    top: 560px;
     left: 980px;
 
     &:hover {
@@ -458,7 +470,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 660px;
+    top: 650px;
     left: 940px;
 
     &:hover {
@@ -474,7 +486,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 635px;
+    top: 625px;
     left: 880px;
 
     &:hover {
@@ -490,7 +502,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 555px;
+    top: 545px;
     left: 820px;
 
     &:hover {
@@ -506,7 +518,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 1080px;
+    top: 1070px;
     left: 1050px;
 
     &:hover {
@@ -522,7 +534,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 1065px;
+    top: 1055px;
     left: 1090px;
 
     &:hover {
@@ -538,7 +550,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 1000px;
+    top: 990px;
     left: 1120px;
 
     &:hover {
@@ -554,7 +566,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 1015px;
+    top: 1005px;
     left: 830px;
 
     &:hover {
@@ -570,7 +582,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 950px;
+    top: 940px;
     left: 830px;
 
     &:hover {
@@ -586,7 +598,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 890px;
+    top: 880px;
     left: 1140px;
 
     &:hover {
@@ -602,7 +614,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 510px;
+    top: 500px;
     left: 640px;
 
     &:hover {
@@ -617,7 +629,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 665px;
+    top: 655px;
     left: 350px;
 
     &:hover {
@@ -632,7 +644,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 595px;
+    top: 585px;
     left: 310px;
 
     &:hover {
@@ -647,7 +659,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 510px;
+    top: 500px;
     left: 270px;
 
     &:hover {
@@ -662,7 +674,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 415px;
+    top: 405px;
     left: 250px;
 
     &:hover {
@@ -677,7 +689,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 820px;
+    top: 810px;
     left: 790px;
 
     &:hover {
@@ -692,7 +704,7 @@ export default {
     border-radius: 10px;
     background: transparent;
     position: absolute;
-    top: 833px;
+    top: 823px;
     left: 1095px;
 
     &:hover {

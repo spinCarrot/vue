@@ -7,4 +7,5 @@ import counter from '../stores/counter'
 
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>

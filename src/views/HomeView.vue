@@ -108,6 +108,9 @@ export default {
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+<div class="bot">
+    <img src="./圖片/安琪.png" alt="" class="img1">
+    <img src="./圖片/小祈.png" alt="" class="img2">
     <div class="top">
         <h3>天氣預報</h3>
         <select v-model="selectedCity" @change="handleCityChange">
@@ -135,17 +138,46 @@ export default {
         </div>
     </div>
     </div>
+    <img src="./圖片/飛兒.png" alt="" class="img3">
+    <img src="./圖片/小夕.png" alt="" class="img4">
+</div>
 </template>
 
 <style scoped lang="scss">
+.bot{
+    width: 100vw;
+    height: 140px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
 .top {
     width: 550px;
-    height: 10vh;
+    height: 100px;
     background-color:lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
+}
+
+.img1{
+    width: 84px;
+    height: 140px;
+}
+.img2{
+    width: 94px;
+    height: 140px;
+}
+.img3{
+    width: 118px;
+    height: 140px;
+}
+.img4{
+    width: 92px;
+    height: 140px;
+}
 }
 
 .carousel {

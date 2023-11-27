@@ -35,7 +35,7 @@ export default {
             directionsDisplay.setMap(this.map);
 
             // 監聽計算路線按鈕點擊事件
-            this.$refs.calculateBtn.addEventListener('click', this.route);
+            // this.$refs.calculateBtn.addEventListener('click', this.route);
         },
         route() {
             // 路線相關設定

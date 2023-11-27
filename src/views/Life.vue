@@ -20,13 +20,75 @@ export default {
 </script>
 
 <template>
-    
-    <button type="button" value="前鎮" @click="getGungon()">前鎮</button>
+    <select class="sel1" name="" id="" value="">
+        <option value="">區</option>
+<option value="">1</option>
+<option value="">2</option>
+    </select>
+
+    <select class="sel2" name="" id="" value="">
+        <option value="">類型</option>
+<option value="">1</option>
+<option value="">2</option>
+    </select>
+
+    <div class="block"></div>
+
+
+    <div class="block2">
+        <div class="message"></div>
+        <div class="map"></div>
+    </div>
+    <!-- <button type="button" value="前鎮" @click="getGungon()">前鎮</button>
     <p>{{ this.ggname }}</p>
     <button type="button" @click="getLugon()">鳳山</button>
-    <!-- <p>{{ this.lugon }}</p> -->
+    <p>{{ this.lugon }}</p>
     <button type="button" @click="getMinzu()">左營</button>
+     -->
 </template>
 
 <style scoped lang="scss">
+.sel1{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.sel2{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 240px;
+    left: 100px;
+}
+
+.block{
+    width: 300px;
+    height: 500px;
+    border:  1px solid black;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
+.block2{
+    width: 800px;
+    height: 550px;
+
+    position: absolute;
+    top: 250px;
+    left: 450px;
+}
+.message{
+    width: 800px;
+    height: 100px;
+    border:  1px solid black;
+}
+.map{
+    width: 800px;
+    height: 450px;
+    border:  1px solid black;
+}
 </style>

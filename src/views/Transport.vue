@@ -12,7 +12,8 @@ export default {
             autocomplete: null,  //自動完成地址
             place:null,
             markers:[],
-            infowindows: []
+            infowindows: [],
+            route:{},
         };
     },
     mounted() {

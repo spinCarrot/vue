@@ -51,14 +51,12 @@ export default {
 </script>
 
 <template>
-<<<<<<< HEAD
     <!-- <p>{{ this.bin }}</p> -->
     <button type="button" @click="test()">Btn</button>
     <button type="button" value="前鎮" @click="this.pppp()" id="ccz">前鎮</button>
     <p>{{ this.ggname }}</p>
     <button type="button" value="苓雅" @click="this.pppp(this.tr)">鳳山</button>
     <p>{{ this.ggname }}</p>
-=======
     <select class="sel1" name="" id="" value="">
         <option value="">區</option>
 <option value="">1</option>
@@ -82,14 +80,10 @@ export default {
     <p>{{ this.ggname }}</p>
     <button type="button" @click="getLugon()">鳳山</button>
     <p>{{ this.lugon }}</p>
->>>>>>> 77e6b7f666579a7a5803876a0eac90fe17336911
     <button type="button" @click="getMinzu()">左營</button>
      -->
 </template>
 
-<<<<<<< HEAD
-<style scoped lang="scss"></style>
-=======
 <style scoped lang="scss">
 .sel1{
     width: 200px;
@@ -135,4 +129,3 @@ export default {
     border:  1px solid black;
 }
 </style>
->>>>>>> 77e6b7f666579a7a5803876a0eac90fe17336911

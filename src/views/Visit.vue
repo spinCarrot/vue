@@ -101,9 +101,10 @@ export default {
     height: 500px;
     border: 1px solid black;
     position: absolute;
+    background-color: white;
     border-radius: 30px;
     top: 300px;
-    right: 100px;
+    left: 1650px;
 
 }
 .btn1 {

@@ -28,4 +28,5 @@ export default {
     <button type="button" @click="getMinzu()">左營</button>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>

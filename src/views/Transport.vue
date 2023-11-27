@@ -11,11 +11,12 @@ export default {
             traffic:"",
             autocomplete: null,  //自動完成地址
             place:null,
+            markers:[],
+            infowindows: []
         };
     },
     mounted() {
         this.initMap();
-        this.auto();
     },
     methods: {
     // 建立地圖
@@ -35,11 +36,6 @@ export default {
             // 監聽計算路線按鈕點擊事件
             this.$refs.calculateBtn.addEventListener('click', this.route);
         },
-        // auto(){
-        //     this.autocomplete = new google.maps.places.Autocomplete(this.$refs.from, options);
-        //     this.autocomplete = new google.maps.places.Autocomplete(this.$refs.to, options);
-            
-        // },
         route() {
             // 路線相關設定
             let request = {
@@ -67,31 +63,46 @@ export default {
 </script>
 
 <template>
-
-    <div class="map" id="map"></div>
-    <p>起點：</p>
-    <input type="text" name="" id="" v-model="from">
-    <P>終點：</P>
-    <input type="text" name="" id="" v-model="to">
-    <p>交通方式：</p>
-    <select name="" id="traffic" v-model="traffic">
-        <option value="">請選擇</option>
-        <option value="DRIVING">汽車</option>
-        <option value="BICYCLING">腳踏車</option>
-        <option value="TRANSIT">大眾運輸</option>
-        <option value="WALKING">走路</option>
-    </select>
-    <button type="button" @click="route">顯示</button>
+    <div class="all">
+        <div class="search">
+            <span>起點：</span>
+            <input type="text" name="" id="" v-model="from">
+            <span>終點：</span>
+            <input type="text" name="" id="" v-model="to">
+            <span>交通方式：</span>
+            <select name="" id="traffic" v-model="traffic">
+                <option value="">請選擇</option>
+                <option value="DRIVING">汽車</option>
+                <option value="BICYCLING">腳踏車</option>
+                <option value="TRANSIT">大眾運輸</option>
+                <option value="WALKING">走路</option>
+            </select>
+            <button type="button" @click="route">顯示</button>
+        </div>
+        <div class="map" id="map"></div>
+    </div>
     
 
 </template>
 
 <style scoped lang="scss">
+
+.all{
+    position: relative;
+}
+.search{
+    position: absolute;
+    top: 10px;
+    left: 450px;
+}
 .map{
     width: 50%;
     height: 500px;
+    position: absolute;
+    left: 400px;
+    top: 50px;
 }
-p{
+span{
     font-size: 20px;
 }
 </style>

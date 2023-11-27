@@ -1,6 +1,6 @@
 <script>
 import { mapState, mapActions } from 'pinia'
-import vis from '../stores/count'
+import vis from '../stores/countsss'
 export default {
     data() {
         return {

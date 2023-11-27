@@ -35,7 +35,7 @@ export default defineStore("count", {
         
     },
     actions:{
-        getGungon(){
+        getGungon(a){
             // const btns = document.querySelectorAll("button[type='button']")
             fetch("https://api.kcg.gov.tw/api/service/Get/cb50902c-3681-43ec-89da-705f68eafb88")
             .then(res=>res.json())
@@ -49,9 +49,10 @@ export default defineStore("count", {
                 this.gungon.forEach(item =>{
                     // this.butto=document.querySelectorAll("button[type='button']");
                     // console.log(item)
-                    if(item.地址.includes("前鎮")){
+                    if(item.地址.includes(a)){
                         this.ggname.push(item.觀光旅館名稱)
                         console.log(item.觀光旅館名稱);
+                        console.log(ggname);
                         }
                     // this.ggadress.push(item.地址)
                 })

@@ -1,48 +1,39 @@
-
-
 <script>
 export default {
     name: "Restaurants",
     data() {
         return {
             map: null,
-            from:"",  
-            to:"",
-            traffic:"",
+            from: "",
+            to: "",
+            traffic: "",
             autocomplete: null,  //自動完成地址
-            place:null,
-            markers:[],
+            place: null,
+            markers: [],
             infowindows: [],
-            route:{},
+            route: {},
         };
     },
-    mounted() {
-        this.initMap();
-    },
     methods: {
-    // 建立地圖
+        // 建立地圖
         initMap() {
-            let directionsService = new google.maps.DirectionsService();
             let directionsDisplay = new google.maps.DirectionsRenderer();
             // 初始化地圖
             this.map = new google.maps.Map(document.getElementById("map"), {
                 // 經緯度
-                center: {lat: 22.620484453547732, lng:120.31206705005728 },
+                center: { lat: 22.620484453547732, lng: 120.31206705005728 },
                 //縮放比例
                 zoom: 18,
             });
             // 放置路線圖層
             directionsDisplay.setMap(this.map);
-
-            // 監聽計算路線按鈕點擊事件
-            this.$refs.calculateBtn.addEventListener('click', this.route);
         },
-        route() {
+        routesMap() {
             // 路線相關設定
             let request = {
-            origin: this.from,      // 起點
-            destination: this.to,   // 終點
-            travelMode: this.traffic,    // 方式
+                origin: this.from,      // 起點
+                destination: this.to,   // 終點
+                travelMode: this.traffic,    // 方式
             };
 
             // 繪製路線
@@ -59,6 +50,15 @@ export default {
                 }
             });
         },
+        // cool(){
+        //     console.log("XXX")        }
+    },
+    created(){
+
+    },
+    mounted() {
+        // this.cool()
+        this.initMap()
     },
 };
 </script>
@@ -78,32 +78,32 @@ export default {
                 <option value="TRANSIT">大眾運輸</option>
                 <option value="WALKING">走路</option>
             </select>
-            <button type="button" @click="route">顯示</button>
+            <button type="button" @click="this.routesMap()">顯示</button>
         </div>
         <div class="map" id="map"></div>
     </div>
-    
-
 </template>
 
 <style scoped lang="scss">
-
-.all{
+.all {
     position: relative;
 }
-.search{
+
+.search {
     position: absolute;
     top: 10px;
     left: 450px;
 }
-.map{
+
+.map {
     width: 50%;
     height: 500px;
     position: absolute;
     left: 400px;
     top: 50px;
 }
-span{
+
+span {
     font-size: 20px;
 }
 </style>

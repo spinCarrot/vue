@@ -10,13 +10,13 @@ export default defineStore("count", {
         }
     },
     getters: {
-        getadds() {
+        getAdds() {
             return this.add
         },
-        getdot(){
+        getDot(){
             return this.dot
         },
-        getfac(){
+        getFac(){
             return this.fac
         }
     },

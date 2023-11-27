@@ -47,15 +47,10 @@ export default {
         this.selectedTimeInfoMaxT = this.weatherInfo[3].time[this.selectedTime];
 
         if (this.selectedCityInfo && this.selectedTimeInfoWx) {
-        // this.condition = this.selectedTimeInfo.weatherElementelementValue[0].value;
         this.condition = this.selectedTimeInfoWx.elementValue[0].value;
         this.minT = this.selectedTimeInfoMinT.elementValue[0].value;
         this.maxT = this.selectedTimeInfoMaxT.elementValue[0].value;
         this.rain = this.selectedTimeInfoPop.elementValue[0].value;
-        
-        // console.log(this.weatherInfo[0].time.find(time => time.startTime === this.selectedTime))
-        // console.log(this.selectedTimeInfo)
-        // console.log(this.selectedCityInfo)
         }
     },
     },
@@ -138,9 +133,6 @@ export default {
                 <span>%</span>
             </div>
         </div>
-        <!-- <div class="contentImg contentItem">
-            <i class="fa-solid fa-rainbow"></i>
-        </div> -->
     </div>
     </div>
 </template>

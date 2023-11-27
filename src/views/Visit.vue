@@ -4,29 +4,29 @@ import vis from '../stores/count'
 export default {
     data() {
         return {
-
+            btns:"",
         }
     },
     computed: {
-        ...mapState(vis, ["add","name"])
+        ...mapState(vis, ["add","name","dot","fac"])
 
     },
     methods: {
-        ...mapActions(vis, ["getadds"]),
-        test(){
-            const cc = document.getElementById("ccc")
-            // console.dir(cc)
-            console.log(cc.value)
-            const btns = document.querySelectorAll("button[type='button']")
-            btns.forEach(item =>{
-                item.addEventListener('click', ()=>{
-                    this.getadds(item.value)
-                })
-            })
-        }
+        ...mapActions(vis, ["getAdds","getDot","getFac"]),
+        // test(){
+        //     // const cc = document.getElementById("ccc")
+        //     // console.dir(cc)
+        //     // console.log(cc.value)
+        //     const btns = document.querySelectorAll("button[type='button']")
+        //     btns.forEach(item =>{
+        //         item.addEventListener('click', ()=>{
+        //             this.getadds(item.位置)
+        //         })
+        //     })
+        // }
     },
     mounted(){
-        this.test()
+        // this.test()
     // console.dir( cls1);
 
     //             cls1.forEach(item=>{
@@ -44,41 +44,35 @@ export default {
 
 
 
-// const map01 =document.getElementById("map01")
 
-// map01.addEventListener('click', function () {
-// // // if(){
-// console.log("aaaa");
-// // }
-// })
 </script>
 
 <template>
 
 <div class="clock">
-    <h2>{{ this.name }}</h2>
+    <!-- <h2>{{ this.name }}</h2> -->
 </div>
     <button type="button"  class="btn1" value="鳳山區">鳳山區</button>
     <button type="button" @click="" class="btn2" value="小港區" id="ccc" >小港區</button>
-    <button type="button" @click="" class="btn3" value="前鎮區">前鎮區</button>
-    <button type="button" @click="" class="btn4" value="旗津區">旗津區</button>
-    <button type="button" @click="" class="btn5" value="苓雅區">苓雅區</button>
-    <button type="button" @click="" class="btn6" value="新興區">新興區</button>
-    <button type="button" @click="" class="btn7" value="前金區">前金區</button>
-    <button type="button" @click="" class="btn8" value="鹽埕區">鹽埕區</button>
-    <button type="button" @click="" class="btn9" value="那瑪夏區">那瑪夏區</button>
-    <button type="button" @click="" class="btn10" value="鼓山區">鼓山區</button>
-    <button type="button" @click="" class="btn11" value="左營區">左營區</button>
-    <button type="button" @click="" class="btn12" value="楠梓區">楠梓區</button>
-    <button type="button" @click="" class="btn13" value="大樹區">大樹區</button>
-    <button type="button" @click="" class="btn15" value="茂林區">茂林區</button>
-    <button type="button" @click="" class="btn16" value="桃源區">桃源區</button>
-    <button type="button" @click="" class="btn17" value="三民區">三民區</button>
-    <button type="button" @click="" class="btn18" value="甲仙區">甲仙區</button>
-    <button type="button" @click="" class="btn19" value="杉林區">杉林區</button>
-    <button type="button" @click="" class="btn20" value="美濃區">美濃區</button>
-    <button type="button" @click="" class="btn21" value="內門區">內門區</button>
-    <button type="button" @click="" class="btn22" value="田寮區">田寮區</button>
+    <button type="button" @click="getAdds() " id="ccc" class="btn3" value="前鎮區">前鎮區</button>
+    <button type="button" @click="" id="ccc" class="btn4" value="旗津區">旗津區</button>
+    <button type="button" @click="getDot()"  id="ccc" class="btn5" value="苓雅區">苓雅區</button>
+    <button type="button" @click="getFac()" id="ccc" class="btn6" value="新興區">新興區</button>
+    <button type="button" @click="" id="ccc" class="btn7" value="前金區">前金區</button>
+    <button type="button" @click="" id="ccc" class="btn8" value="鹽埕區">鹽埕區</button>
+    <button type="button" @click="" id="ccc" class="btn9" value="那瑪夏區">那瑪夏區</button>
+    <button type="button" @click="" id="ccc" class="btn10" value="鼓山區">鼓山區</button>
+    <button type="button" @click="" id="ccc" class="btn11" value="左營區">左營區</button>
+    <button type="button" @click="" id="ccc" class="btn12" value="楠梓區">楠梓區</button>
+    <button type="button" @click="" id="ccc" class="btn13" value="大樹區">大樹區</button>
+    <button type="button" @click="" id="ccc" class="btn15" value="茂林區">茂林區</button>
+    <button type="button" @click="" id="ccc" class="btn16" value="桃源區">桃源區</button>
+    <button type="button" @click="" id="ccc" class="btn17" value="三民區">三民區</button>
+    <button type="button" @click="" id="ccc" class="btn18" value="甲仙區">甲仙區</button>
+    <button type="button" @click="" id="ccc" class="btn19" value="杉林區">杉林區</button>
+    <button type="button" @click="" id="ccc" class="btn20" value="美濃區">美濃區</button>
+    <button type="button" @click="" id="ccc" class="btn21" value="內門區">內門區</button>
+    <button type="button" @click=""  class="btn22" value="田寮區">田寮區</button>
     <button type="button" @click="" class="btn23" value="阿蓮區">阿蓮區</button>
     <button type="button" @click="" class="btn24" value="路竹區">路竹區</button>
     <button type="button" @click="" class="btn25" value="湖內區">湖內區</button>

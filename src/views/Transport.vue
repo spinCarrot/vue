@@ -6,7 +6,7 @@ export default {
             from: "",
             to: "",
             traffic: "",
-            autocomplete: null,  //自動完成地址
+            // autocomplete: null,  //自動完成地址
             place: null,
             markers: [],
             infowindows: [],
@@ -46,31 +46,6 @@ export default {
                     directionsDisplay.setDirections(result);
                 } else {
                     console.log(status);
-                //     let steps = result.routes[0].legs[0].steps;
-                //     steps.forEach((e, i) => {
-                //         console.log(steps);
-                //         // 加入地圖標記
-                //         markers[i] = new google.maps.Marker({
-                //             position: { lat: e.start_location.lat(), lng: e.start_location.lng() },  //start_location 包含目前步驟中經過地理編碼的起點 
-                //             map: map,
-                //             label: { text: i + '', color: "#fff" }
-                //         });
-                //         // 加入資訊視窗
-                //         infowindows[i] = new google.maps.InfoWindow({
-                //             content: e.instructions
-                //         });
-                //         // 加入地圖標記點擊事件
-                //         markers[i].addListener('click', function () {
-                //             if(infowindows[i].anchor){
-                //                 infowindows[i].close();
-                //             }else{
-                //                 infowindows[i].open(map, markers[i]);
-                //             }
-                //         });
-                //     });
-                //     directionsDisplay.setDirections(result);
-                // } else {
-                //     console.log(status);
                 }
             });
         },

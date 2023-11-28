@@ -120,7 +120,7 @@ export default {
                     <img src="./圖片/08.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>佛光山</h3>
-                        <p>釋星雲法師創辦，台灣佛教四大名山之一</p>
+                        <p>台灣佛教四大名山之一</p>
                     </div>
                 </div>
                 <div class="carousel-item">

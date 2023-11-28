@@ -127,7 +127,7 @@ export default {
                     <img src="./圖片/09.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>鴨肉飯</h3>
-                        <p>網友推薦高雄最具代表性小吃</p>
+                        <p>網友推薦高雄代表小吃</p>
                     </div>
                 </div>
             </div>

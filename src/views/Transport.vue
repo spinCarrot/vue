@@ -1,6 +1,5 @@
 <script>
 export default {
-    name: "Restaurants",
     data() {
         return {
             map: null,
@@ -47,17 +46,39 @@ export default {
                     directionsDisplay.setDirections(result);
                 } else {
                     console.log(status);
+                //     let steps = result.routes[0].legs[0].steps;
+                //     steps.forEach((e, i) => {
+                //         console.log(steps);
+                //         // 加入地圖標記
+                //         markers[i] = new google.maps.Marker({
+                //             position: { lat: e.start_location.lat(), lng: e.start_location.lng() },  //start_location 包含目前步驟中經過地理編碼的起點 
+                //             map: map,
+                //             label: { text: i + '', color: "#fff" }
+                //         });
+                //         // 加入資訊視窗
+                //         infowindows[i] = new google.maps.InfoWindow({
+                //             content: e.instructions
+                //         });
+                //         // 加入地圖標記點擊事件
+                //         markers[i].addListener('click', function () {
+                //             if(infowindows[i].anchor){
+                //                 infowindows[i].close();
+                //             }else{
+                //                 infowindows[i].open(map, markers[i]);
+                //             }
+                //         });
+                //     });
+                //     directionsDisplay.setDirections(result);
+                // } else {
+                //     console.log(status);
                 }
             });
         },
-        // cool(){
-        //     console.log("XXX")        }
     },
     created(){
 
     },
     mounted() {
-        // this.cool()
         this.initMap()
     },
 };
@@ -68,9 +89,9 @@ export default {
         <div class="search">
             <span>起點：</span>
             <input type="text" name="" id="" v-model="from">
-            <span>終點：</span>
+            <span>　終點：</span>
             <input type="text" name="" id="" v-model="to">
-            <span>交通方式：</span>
+            <span>　交通方式：</span>
             <select name="" id="traffic" v-model="traffic">
                 <option value="">請選擇</option>
                 <option value="DRIVING">汽車</option>
@@ -78,6 +99,7 @@ export default {
                 <option value="TRANSIT">大眾運輸</option>
                 <option value="WALKING">走路</option>
             </select>
+            <span>　</span>
             <button type="button" @click="this.routesMap()">顯示</button>
         </div>
         <div class="map" id="map"></div>
@@ -92,14 +114,14 @@ export default {
 .search {
     position: absolute;
     top: 10px;
-    left: 450px;
+    left: 400px;
 }
 
 .map {
-    width: 50%;
+    width: 1000px;
     height: 500px;
     position: absolute;
-    left: 400px;
+    left: 300px;
     top: 50px;
 }
 

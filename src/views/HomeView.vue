@@ -174,7 +174,7 @@ export default {
     <img src="./圖片/小夕.png" alt="" class="img4">
 </div>
 <div class="bottom">
-    <p>外部連結：<a href="https://admin.khh.travel/">高雄市觀光局</a>、<a href="https://khh.travel/">高雄旅遊網</a>、<a href="https://www.krtc.com.tw/">高雄捷運全球資訊網</a>、<a href="https://www.welcometw.com/%E9%AB%98%E9%9B%84%E6%99%AF%E9%BB%9E%E6%8E%A8%E8%96%A6-%EF%BD%9C%E9%AB%98%E9%9B%84%E6%9C%80%E7%BE%8E%E6%9C%80%E5%A4%AFig%E6%89%93%E5%8D%A1%E6%99%AF%E9%BB%9E%EF%BC%8C%E5%B8%82%E5%8D%80%E3%80%81/">高雄必去景點推薦</a>、<a href="https://alerts.ncdr.nat.gov.tw/index.aspx?Mes=459169" >疫情示警</a></p>
+    <p><a href="https://admin.khh.travel/">高雄市觀光局</a>、<a href="https://khh.travel/">高雄旅遊網</a>、<a href="https://www.krtc.com.tw/">高雄捷運全球資訊網</a>、<a href="https://www.welcometw.com/%E9%AB%98%E9%9B%84%E6%99%AF%E9%BB%9E%E6%8E%A8%E8%96%A6-%EF%BD%9C%E9%AB%98%E9%9B%84%E6%9C%80%E7%BE%8E%E6%9C%80%E5%A4%AFig%E6%89%93%E5%8D%A1%E6%99%AF%E9%BB%9E%EF%BC%8C%E5%B8%82%E5%8D%80%E3%80%81/">高雄必去景點推薦</a>、<a href="https://alerts.ncdr.nat.gov.tw/index.aspx?Mes=459169" >疫情示警</a></p>
 </div>
 </template>
 

@@ -10,7 +10,7 @@ export default defineStore("count", {
         }
     },
     getters: {
-        getAdds() {
+        getAdd() {
             return this.add
         },
         getDot(){

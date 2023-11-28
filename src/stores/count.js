@@ -9,7 +9,7 @@ export default defineStore("count", {
             locat: [],
             lugon: [],
             minzu: [],
-            butto: "",
+            
         }
     },
     getters: {
@@ -36,7 +36,6 @@ export default defineStore("count", {
     },
     actions: {
         getGungon(a) {
-            // const btns = document.querySelectorAll("button[type='button']")
             fetch("https://api.kcg.gov.tw/api/service/Get/cb50902c-3681-43ec-89da-705f68eafb88")
                 .then(res => res.json())
                 .then(obj => {
@@ -52,7 +51,8 @@ export default defineStore("count", {
                             this.ggname.push(item.觀光旅館名稱)
                             console.log(item.觀光旅館名稱);
                             console.log(this.ggname);
-                        }
+                        };
+                    
                         // this.ggadress.push(item.地址)
                     })
                     // this.gungon.data.forEach(item =>{

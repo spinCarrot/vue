@@ -19,6 +19,15 @@ export default defineStore("count", {
         // getFac(){
         //     return this.fac
         // }
+        // getAdd() {
+        //     return this.add
+        // },
+        // getDot(){
+        //     return this.dot
+        // },
+        // getFac(){
+        //     return this.fac
+        // }
     },
     actions: {
         getAdds() {

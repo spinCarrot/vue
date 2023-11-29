@@ -67,19 +67,19 @@ export default{
     }
     .home{
         position: absolute;
-        left: 250px;
+        left: 17%;
     }
     .visit{
         position: absolute;
-        left: 450px;
+        left: 30%;
     }
     .life{
         position: absolute;
-        left: 850px;
+        left: 56%;
     }
     .transport{
         position: absolute;
-        left: 1050px;
+        left: 69%;
     }
 }
 </style>
